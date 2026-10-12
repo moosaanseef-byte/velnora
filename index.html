@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luxury Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>VELNORA</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p>Cart: <span id="cart">0</span></p>
+</header>
+
+<section class="hero">
+  <h1>Wear Your Style</h1>
+  <p>Discover the latest fashion</p>
+  <a href="#shop">Shop Now</a>
+</section>
+
+<h2 class="title" id="shop">Our Collection</h2>
+
+<section class="products">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400">
+    <h3>Classic T-Shirt</h3>
+    <p>₹599</p>
+    <button onclick="addCart()">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400">
+    <h3>Casual Wear</h3>
+    <p>₹899</p>
+    <button onclick="addCart()">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400">
+    <h3>Fashion Outfit</h3>
+    <p>₹1299</p>
+    <button onclick="addCart()">Add to Cart</button>
+  </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velnora - Checkout</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+<div class="payment">
+  <h1>VELNORA</h1>
+  <h2>Checkout & Payment</h2>
+
+  <div class="summary">
+    <p>Classic T-Shirt</p>
+    <h3>₹599</h3>
+    <hr>
+    <p>Total Amount: <b>₹599</b></p>
+  </div>
+
+  <form id="paymentForm">
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Address</label>
+    <textarea placeholder="Enter delivery address" required></textarea>
+
+    <label>Payment Method</label>
+    <select id="method" required>
+      <option value="">Select payment method</option>
+      <option value="upi">UPI</option>
+      <option value="card">Credit / Debit Card</option>
+      <option value="cod">Cash on Delivery</option>
+    </select>
+
+    <div id="paymentDetails"></div>
+
+    <button type="submit">Place Order - ₹599</button>
+  </form>
+
+  <p id="message"></p>
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>
+
+<footer id="contact">
+  <h3>VELNORA</h3>
+  <p>Style that speaks for you.</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
